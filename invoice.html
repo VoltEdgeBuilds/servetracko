@@ -201,7 +201,7 @@
                 <div class="md:col-span-1">
                     <div class="flex items-center mb-4">
                         <i class="fas fa-bolt text-yellow-400 text-2xl mr-2"></i>
-                        <h3 class="text-xl font-bold">VoltEdge</h3>
+                        <h3 class="text-xl font-bold">VoltNexis</h3>
                     </div>
                     <p class="text-gray-300 mb-4">Empowering local businesses with smart digital tools for growth and success.</p>
                     <div class="flex space-x-4">
@@ -329,7 +329,7 @@
                     </div>
                     
                     <div class="text-center text-gray-500 text-sm border-t border-gray-200 pt-4">
-                        <p id="invoiceFooterText">Powered by VoltEdge ⚡</p>
+                        <p id="invoiceFooterText">Powered by VoltNexis ⚡</p>
                     </div>
                 </div>
             </div>
@@ -610,7 +610,7 @@
                 for (let i = 0; i < 15; i++) {
                     const mark = document.createElement('div');
                     mark.className = 'mark';
-                    mark.textContent = 'VoltEdge';
+                    mark.textContent = 'VoltNexis';
                     watermark.appendChild(mark);
                 }
                 container.appendChild(watermark);
@@ -621,7 +621,7 @@
                 for (let i = 0; i < 3; i++) {
                     const mark = document.createElement('div');
                     mark.className = 'mark';
-                    mark.textContent = 'VoltEdge';
+                    mark.textContent = 'VoltNexis';
                     watermark.appendChild(mark);
                 }
                 container.appendChild(watermark);
@@ -629,7 +629,7 @@
                 // 1 small watermark for pro plan
                 const watermark = document.createElement('div');
                 watermark.className = 'watermark-pro';
-                watermark.textContent = 'VoltEdge';
+                watermark.textContent = 'VoltNexis';
                 container.appendChild(watermark);
             }
         }
@@ -692,9 +692,9 @@
             let message = `Hello ${customer.name}! Your invoice ${currentInvoice.invoice_number} for ₹${currentInvoice.total_amount} is ready. `;
             
             if (userProfile?.plan === 'free') {
-                message += 'Created with VoltEdge Free Tool ⚡';
+                message += 'Created with VoltNexis Free Tool ⚡';
             } else if (userProfile?.plan === 'plus') {
-                message += 'By VoltEdge ⚡';
+                message += 'By VoltNexis ⚡';
             }
             
             const whatsappUrl = `https://wa.me/${customer.whatsapp}?text=${encodeURIComponent(message)}`;
